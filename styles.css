@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa; /* Світло-блакитний фон */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* Білий фон контейнера */
+    padding: 40px; 
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1600px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #00796b; /* Темно-синій заголовок */
+}
+
+.week-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.week-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
+
+input[type="text"], textarea {
+    border: 2px solid #00796b; /* Темно-синя обводка */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #f9f9f9; /* Світлий фон для полів */
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 20px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr; 
+    gap: 30px;
+}
+
+.goals, .days {
+    background-color: #e8f5e9; /* Світло-зелений фон для секцій */
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.goals h2, .days h3 {
+    font-size: 1.7rem; 
+    margin-bottom: 15px;
+    color: #1b5e20; /* Темно-зелений заголовок */
+}
+
+.goal-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #c8e6c9; /* Світліший зелений для рядків */
+}
+
+.goal-item:hover {
+    background-color: #b2dfdb; /* Зміна фону при наведенні */
+}
+
+.goal-item input[type="text"] {
+    width: 100%;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.day {
+    background-color: #fce4ec; /* Світло-рожевий фон для днів */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.day h3 {
+    color: #880e4f; /* Темно-рожевий заголовок для днів */
+}
+
+.day textarea {
+    border: 2px solid #880e4f; /* Темно-рожевий обводка */
+    background-color: #f9f9f9; /* Світлий фон для текстових областей */
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
